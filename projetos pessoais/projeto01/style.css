@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+h1{  
+    text-align: center;
+    text-decoration: none;
+}
+h1:hover{
+    text-decoration: line-through;
+    color: blue;
+    transition-duration: 2s;
+}
+
+
