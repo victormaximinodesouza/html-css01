@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@font-face {
+    font-family: 'Fonte cordel';
+    src: url('fonts/PassionOne-Bold.ttf');
+}
+@font-face {
+    font-family: 'Fonte base';
+    src: url('fonts/ComicNeue-Bold.ttf');
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;   
+}
+
+
+body{
+    background-color: darkgrey;
+}
+
+#autor{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#autor:hover{
+    text-decoration: underline;
+}
+
+
+
+header{
+    background-color: black;
+    font-family: 'Fonte cordel';
+    font-variant: small-caps;
+    text-align: center;
+    padding-bottom: 30px;
+    box-shadow: 1px 4px 4px 6px;
+}
+
+header > h1{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 7.0em;
+}
+
+section.normal > article{
+    padding: 50px;
+    margin: auto;
+    padding-left: 1px;
+}
+section.normal > article > p{
+    padding: 7px;
+    margin-left: 0px;
+    text-align: justify;
+    font-size: 2.5em;
+    font-family: 'Fonte base';
+    font-style: italic;
+    line-height: 3;
+}
+
+
+
+section#imagem01{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+}
+
+section.imagem{
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section{
+    display: block;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+
+
+section.imagem > p{
+    color: rgb(207, 224, 120);
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(0, 0 , 0, 0.514);
+    text-align: justify;
+    font-size: 2.5em;
+    font-family: 'Fonte base';
+    font-style: italic;
+    line-height: 2;
+    border-radius: 20px;
+
+}
+
+.texto3{
+    font-size: 2.5em;
+    font-family: 'Fonte base';
+    font-style: italic;
+    line-height: 3;
+}
+
+#texto4{
+    font-size: 2.5em;
+    font-family: 'Fonte base';
+    font-style: italic;
+    line-height: 3;
+}
+
+
+section.imagem02{
+    background-image: url('imagens/background002.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem02 p{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.263);
+    font-size: 2.5em;
+    line-height: 3;
+    font-family: 'Fonte base';
+    font-style: italic;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section.texto05{
+    font-family: 'Fonte base';
+    font-size: 2.5em;
+    text-align: justify;
+    font-style: italic;
+    line-height: 3;
+}
+
+
+.texto06{
+    font-family: 'Fonte base';
+    font-style: italic;
+    line-height: 3;
+    font-size: 2.5em;
+    text-align: justify;
+}
+
+footer > p{
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+}
+footer > p > a {
+    text-decoration: none;
+    font-family: 'Fonte cordel';
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+  header > h1 {
+    font-size: 2.5em;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  section#imagem01{
+    background-position: right center;
+  }
+
+  section.normal > article > p
+  section.imagem > p
+  section.imagem02 p
+  .texto3
+  #texto4
+  section.texto05
+  .texto06 {
+    font-size: 1.3em;
+    padding: 10px;
+    line-height: 2;
+  }
+
+  section {
+    padding: 5vh 10px;
+  }
+
+  body {
+    background-color: lightgray;
+  }
+
+  footer > p {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
