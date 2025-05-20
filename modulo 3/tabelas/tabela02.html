@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption{
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        thead > tr > th{
+            color: aqua;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Exercicios de tabelas</h1>
+    <table>
+        <caption>
+            Jogos favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th>Classificação</th>
+                <th colspan="4" scope="colgroup">Jogos</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+        <tr>
+            <th rowspan="2" scope="rowgroup"> Adultos </th>
+            <td> Call of Duty </td>
+            <td>Gta V</td>
+            <td>Farcy 4 </td>
+        </tr>
+        <tr>
+            <td>Mortal Kombat</td>
+            <td>UFC</td>
+            <td>Street fight</td>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="rowgroup"> Criança</th>
+            <td>Minecraft</td>
+            <td>Bomba pet</td>
+            <td>Roblox</td>
+        </tr>
+        <tr>
+            <td>Video no youtube</td>
+            <td>Super mario</td>
+            <td>the crew</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
