@@ -9,6 +9,7 @@
             text-align: center;
             display: block;
             margin: auto;
+            padding-bottom: 10px;
     
 
         }
@@ -16,7 +17,7 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="inome"> Nome</label>
             <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="nome">
@@ -39,7 +40,7 @@
     </p>
     <p>
         <label for="ihora">Horário da prova</label>
-        <input type="time" name="tempo" id="ihora" >
+        <input type="time" name="tempo" id="ihora" placeholder="Horário" >
     </p>
     <p>
        
