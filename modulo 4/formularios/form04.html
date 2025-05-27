@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: cadetblue;
+        }
         form input:hover{
             background-color: rgba(211, 211, 211, 0.575);
             border: 2px solid black;
@@ -14,11 +17,15 @@
 
         }
         fieldset:hover{
-            border: 0.5px solid black;
+            border: 1px solid black;
         }
 
         h1{
             text-align: center;
+            text-decoration: underline;
+        }
+        h1:hover{
+            text-decoration: none;
         }
 
     </style>
@@ -38,13 +45,44 @@
             </p>
             <p>
                 <label for="itel">Fone:</label>
-                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\d[0-9]- \d{4}$"  required>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\d[0-9]- \d{4}$"  required  placeholder="(xx)(xxxx)-(xxxx)">
+            </p>
+
+            <p>
+                <label for="mes">Data de nascimneto</label>
+                <input type="date" name="nome" id="mes">
             </p>
             <p>
+                <label for="isexo"></label>
+                <input type="radio" name="Sexo" id="isexo"><strong>Masculino</strong>
+                <input type="radio" name="Sexo" id="isexo"><strong>Feminino</strong>
+            </p>
+            <p>
+
+            </p>
+                 <p>
+                    <label for="lik">Profissão</label>
+                    <input type="text" name="" id="lik" list="yuy">
+                    <datalist id="yuy">
+                        <option>programador</option>
+                        <option >Desenvolvedor</option>
+                        <option>Médico</option>
+                        <option>Outros</option>
+                    </datalist>
+                </p>
+
+                <p>
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Limpar">
                 </p>
         </fieldset>
+
+        <fieldset>
+            <legend>Esportes </legend>
+            <input type="checkbox" name="" id="ibas"> <label for="ibas">Basquete</label>
+        </fieldset>
+
+       
     </form>
     
 </body>

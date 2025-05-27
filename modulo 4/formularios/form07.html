@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>formulário do programador</h1>
+    <form action="form04.html" method="post" autocomplete="on">
+        <p>
+            <label for="ilin"></label>
+            <select name="" id="ilin">
+                <option value="" selected>--Escolha--</option>
+                <optgroup label="back-end">
+                    <option value="">Python</option>
+                    <option value="">C</option>
+                    <option value="">C++</option>
+                    <option value="">C#</option>
+                    <option value="">Java</option>
+                    <option value="">Kotlin</option>
+                    <option value="">JavaScript</option>
+                    <optgroup label="front-end">
+                        <option value="">HTML</option>
+                        <option value="">CSS</option>
+                        <option value="">JavaScript</option>
+                        <option value="">Node.js</option>
+                        <option value="">TypeScript</option>
+                        <option value="">React.js</option>
+                    </optgroup>
+                </optgroup>
+            </select>
+
+            <p>
+                <label for="deyt">Profissão</label>
+                <input type="text" name="nome" id="deyt" list="pv">
+
+                <datalist id="pv">
+                    <option>Programdor</option>
+                    <option>Desenvolvedor de software</option>
+                    <option>TI</option>
+                    <option >Desenvolvedor back-end</option>
+                    <option >Desenvolvedor front-end</option>
+
+                </datalist>
+            </p>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        <p>
+            <textarea name="idssd" id="texto" rows="30" cols="30"></textarea>
+        </p>
+
+
+    </form>
+</body>
+</html>
