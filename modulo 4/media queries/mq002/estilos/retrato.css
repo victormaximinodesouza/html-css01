@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/*Aparelhos em pé (portrait)*/
+
+body{
+    background-color: aqua;
+    background: url('../imagens/cev-portrait.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+
+}
