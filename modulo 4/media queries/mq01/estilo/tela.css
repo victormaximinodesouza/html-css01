@@ -28,3 +28,15 @@ menu li{
 ul{
     background-color: aquamarine;
 }
+
+article p{
+    background-color: antiquewhite;
+    padding-top: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+article > h2{
+    text-align: center;
+    padding: 10px;
+}
